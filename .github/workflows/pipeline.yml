@@ -24,8 +24,8 @@ jobs:
       - name: Jest Test
         run: npm run test
 
-      - name: Start server
-        run: npm run start
+      - name: Start prod
+        run: npm run start-prod
 
       - name: Playwright Test
         run: npm run test-pr
