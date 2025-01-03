@@ -19,13 +19,10 @@ jobs:
         run: npm run eslint
 
       - name: Installing Playwright Browsers
-        run: npx playwright install
+        run: npx playwright install --with-deps
 
       - name: Jest Test
         run: npm run test
-
-      - name: Start server
-        run: npm run start
 
       - name: Playwright Test
         run: npx playwright test
