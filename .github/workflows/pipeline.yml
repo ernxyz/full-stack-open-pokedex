@@ -19,9 +19,7 @@ jobs:
         run: npm run eslint
       - name: Jest Test
         run: npm run test
-
       - name: Installing Playwright Browsers
         run: npx playwright install --width-deps
-
       -name: E2E Test
         run: npx playwright test
