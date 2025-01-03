@@ -24,5 +24,9 @@ jobs:
       - name: Jest Test
         run: npm run test
 
+      - name: Start server
+        run: npm run start
+
       - name: Playwright Test
         run: npm run test-pr
+        wait-on: http://localhost:8080
