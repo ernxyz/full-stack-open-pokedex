@@ -43,4 +43,4 @@ module.exports = {
     "react/prop-types": 0,
     "no-undef": 0
   }
-}
+};
