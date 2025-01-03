@@ -21,19 +21,16 @@ module.exports = {
   "rules": {
     "indent": [
       "error",
-        2
-      ],
-    "linebreak-style": [
-      "error",
-      "unix"
+      2
     ],
+    "linebreak-style": "off",
     "quotes": [
       "error",
-      "single"
+      "double"
     ],
     "semi": [
       "error",
-      "never"
+      "always"
     ],
     "eqeqeq": "error",
     "no-trailing-spaces": "error",
@@ -43,7 +40,7 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "no-undef": 0
   }
 }
