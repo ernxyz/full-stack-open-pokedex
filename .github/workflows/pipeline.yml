@@ -38,7 +38,7 @@ jobs:
 
       - name: Trigger deployment on Render
         uses: sws2apps/render-deployment@main
-        if: ${{ github.event_name == "push" }}
+        if: ${{ github.event_name == 'push' }}
         with: 
           serviceId: ${{ secrets.RENDER_SERVICE_ID }}
           apiKey: ${{ secrets.RENDER_API_KEY }}
