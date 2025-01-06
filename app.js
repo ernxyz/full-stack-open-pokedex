@@ -15,6 +15,9 @@ app
 
     // if (true) throw("error...");
     res.send("ok");
+  })
+  .get("/info", (req, res) => {
+    res.send("xyz");
   });
 
 app.listen(PORT, () => {
