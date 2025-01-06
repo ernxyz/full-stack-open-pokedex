@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 const express = require("express");
 const app = express();
 
@@ -11,6 +12,8 @@ app
     res.send("1");
   })
   .get("/health", (req, res) => {
+
+    if (true) throw("error...");
     res.send("ok");
   });
 
