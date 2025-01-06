@@ -13,7 +13,7 @@ app
   })
   .get("/health", (req, res) => {
 
-    if (true) throw("error...");
+    // if (true) throw("error...");
     res.send("ok");
   });
 
